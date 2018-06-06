@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.stage.FileChooser?>
+<VBox fx:id="pane" xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="skelet.javaexperts.chapter1.exercise10.TextEditorController"
+      >
+    <fx:define>
+        <Alert fx:id="aboutAlert" title="About" headerText="This is a blabla" alertType="INFORMATION"/>
+    </fx:define>
+    <MenuBar>
+        <menus>
+            <Menu text="File">
+                <items>
+                    <MenuItem text="Open" onAction="#showFileChooser"/>
+                    <MenuItem text="Save" onAction="#Save"/>
+                    <SeparatorMenuItem />
+                    <MenuItem text="Exit"/>
+                </items>
+            </Menu>
+            <Menu text="Help">
+                <items>
+                    <MenuItem text="About" onAction="#showAbout"/>
+                </items>
+            </Menu>
+        </menus>
+    </MenuBar>
+    <TextArea fx:id="textArea" prefHeight="1000"  />
+</VBox>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.FXCollections?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import skelet.javaexperts.chapter1.exercise5.MultiSelectListView?>
+<?import java.lang.*?>
+
+<?import javafx.scene.layout.TilePane?>
+<BorderPane xmlns:fx="http://javafx.com/fxml">
+    <top>
+        <FlowPane hgap="10">
+            <padding>
+                <Insets left ="20" />
+            </padding>
+            <Label text="Name: " />
+            <TextField promptText="Enter your name" />
+            <Label text="Email: " />
+            <TextField promptText="Enter your email" />
+            <Label text="Delivery date: " />
+            <DatePicker prefWidth="100"/>
+            <Button text="Order" />
+        </FlowPane>
+    </top>
+    <left>
+        <FlowPane>
+
+        </FlowPane>
+    </left>
+    <right>
+        <ScrollPane>
+
+        </ScrollPane>
+    </right>
+    <bottom>
+        <FlowPane>
+
+        </FlowPane>
+    </bottom>
+</BorderPane>

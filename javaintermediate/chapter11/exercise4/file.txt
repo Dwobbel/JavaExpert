@@ -1,0 +1,2 @@
+Hello Diary,
+today I learned about streams!
